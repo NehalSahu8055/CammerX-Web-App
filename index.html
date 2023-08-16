@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/icons/icon-camera.svg" />
+
+  <title>CammerX</title>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- tailwind cdn -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+  <!-- stylesheet linking -->
+  <link rel="stylesheet" href="./src/css/output.min.css">
+  
+  <!-- script linking -->
+  <script defer src="./src/script/script.js"></script>
+
+</head>
+
+<body class="bg-[#28282B] flex flex-col font-[family:'Open_Sans']">
+  <!-- -------------------------- Header Container -------------------------------- -->
+  <header class="flex justify-between py-2 px-6 shadow-[-1px_0px_10px_0px_#000000b3] rounded-b-xl">
+
+    <!-- ----------------------------- Navbar Brand ------------------------- -->
+    <div class="navbar-brand flex justify-center items-center">
+      <a href="/" title="logo CammerX" class="logo flex items-center gap-1">
+        <img class="animate-spin [animation-duration:8s] hover:[animation-duration:0.7s]"
+          src="./images/icons/icon-camera.svg" width="29" height="29" alt="Logo | Webcam" />
+        <h2 class="text-white font-semibold">CammerX</h1>
+      </a>
+    </div>
+
+
+    <!-- --------------------------- Tool Tray/ Nav Menu ------------------------- -->
+    <nav class="social-media-tray nav-menu">
+      <ul class="menu flex justify-center items-center gap-3">
+
+        <li>
+          <a class="flex p-2 hover:shadow-[-1px_0px_4px_0px_#000000b3] rounded-full transition-all duration-300"
+            href="https://www.linkedin.com/in/nehalsahu/" title="Linked In" target="_blank">
+            <span class="sr-only">Linked In</span>
+            <img class="hover:scale-105 transition-all duration-200" src="./images/icons/linked-in.svg"
+              alt="LinkedIn Icon for linking linked in profile" />
+          </a>
+        </li>
+        <li>
+          <a class="flex p-2 hover:shadow-[-1px_0px_4px_0px_#000000b3] rounded-full transition-all duration-300"
+            href="https://github.com/NehalSahu8055" title="Github" target="_blank">
+            <span class="sr-only">Github</span>
+            <img class="hover:scale-105 transition-all duration-200" src="./images/icons/github.svg"
+              alt="Github Icon for linking github profile" />
+          </a>
+        </li>
+        <li>
+          <a class="flex p-2 hover:shadow-[-1px_0px_4px_0px_#000000b3] rounded-full transition-all duration-300"
+            href="https://www.frontendmentor.io/home" title="FrontEnd Mentor" target="_blank">
+            <span class="sr-only">FrontEnd Mentor</span>
+            <img class="hover:scale-105 transition-all duration-200" src="./images/icons/fem.svg"
+              alt="FrontEnd Mentor Icon for linking frontend mentor profile" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- -------------------------- Main Container -------------------------------- -->
+  <main class="flex py-4 px-3 max-h-screen">
+    <h1 class="sr-only">CammerX Webcam Web App</h1>
+
+    <!---------------------------- After Effect Menu ------------------------->
+    <section
+      class="afterEffectTray flex flex-col justify-between flex-[0.12] relative bg-[#28282B] py-2 rounded-xl shadow-[-1px_0px_15px_0px_#000000b3] overflow-y-scroll">
+      <h2 class="sr-only">After Effects Menu Vertical Scrollable</h2>
+      <div
+        class="name-pointer flex flex-col heading sticky z-10 top-0 translate-y-[-8px] side-pointer bg-red-500  text-center text-white p-1 rounded-t-xl shadow-[0px_9px_8px_2px_#00000080]"
+        title="After Effects">
+        After Effects
+      </div>
+      <div class="afterEffects flex flex-col justify-between items-center px-2">
+        <button aria-pressed="false"
+          class="hdr relative w-full  h-[5rem] rounded-xl bg-black bg-hdr  bg-cover bg-center shadow-[inset_-1px_0px_10px_0px_#000000b3] border-2 border-[#000000b3] opacity-75  transition-all duration-300 mb-2"
+          title="HDR Filter">
+          <div
+            class="overlay hidden absolute top-0 bottom-0 left-0 right-0 text-white  backdrop-blur-[1px] bg-[#97979724]  rounded-xl flex justify-center items-center">
+            HDR</div>
+        </button>
+        <button aria-pressed="false"
+          class="Matrix Dot relative w-full  h-[5rem] rounded-xl bg-black bg-matrix-dot bg-cover bg-center shadow-[inset_-1px_0px_10px_0px_#000000b3] border-2 border-[#000000b3] opacity-75  transition-all duration-300 mb-2"
+          title="Matrix Dot Filter">
+          <div
+            class="overlay hidden absolute top-0 bottom-0 left-0 right-0 text-white  backdrop-blur-[1px] bg-[#97979724]  rounded-xl flex justify-center items-center ">
+            MatrixDot</div>
+        </button>
+        <button aria-pressed="false"
+          class="rgb-split relative w-full  h-[5rem] rounded-xl bg-black bg-rgb-split bg-cover bg-center shadow-[inset_-1px_0px_10px_0px_#000000b3] border-2 border-[#000000b3] opacity-75  transition-all duration-300 mb-2"
+          title="RGB Split Filter">
+          <div
+            class="overlay hidden absolute top-0 bottom-0 left-0 right-0 text-white  backdrop-blur-[1px] bg-[#97979724]  rounded-xl flex justify-center items-center">
+            RGB Split</div>
+        </button>
+        <button aria-pressed="false"
+          class="red-effect relative w-full  h-[5rem] rounded-xl bg-black bg-red-effect bg-cover bg-center shadow-[inset_-1px_0px_10px_0px_#000000b3] border-2 border-[#000000b3] opacity-75 transition-all duration-300 mb-2"
+          title="Red Filter">
+          <div
+            class="overlay hidden absolute top-0 bottom-0 left-0 right-0 text-white  backdrop-blur-[1px] bg-[#97979724]  rounded-xl flex justify-center items-center">
+            Red Effect</div>
+        </button>
+        <button aria-pressed="false"
+          class="pixelation-effect relative w-full  h-[5rem] rounded-xl bg-black bg-pixelation bg-cover bg-center shadow-[inset_-1px_0px_10px_0px_#000000b3] border-2 border-[#000000b3] opacity-75 transition-all duration-300 mb-2"
+          title="Pixelation Filter">
+          <div
+            class="overlay hidden absolute top-0 bottom-0 left-0 right-0 text-white  backdrop-blur-[1px] bg-[#97979724]  rounded-xl flex justify-center items-center">
+            Pixelation</div>
+        </button>
+        <button aria-pressed="false"
+          class="vintage-effect relative w-full  h-[5rem] rounded-xl bg-black bg-vintage bg-cover bg-center shadow-[inset_-1px_0px_10px_0px_#000000b3] border-2 border-[#000000b3] opacity-75 transition-all duration-300 mb-2"
+          title="Vintage Filter">
+          <div
+            class="overlay hidden absolute top-0 bottom-0 left-0 right-0 text-white  backdrop-blur-[1px] bg-[#97979724]  rounded-xl flex justify-center items-center">
+            Vintage</div>
+        </button>
+        <button aria-pressed="false"
+          class="mirror-effect relative w-full  h-[5rem] rounded-xl bg-black bg-mirror bg-cover bg-center shadow-[inset_-1px_0px_10px_0px_#000000b3] border-2 border-[#000000b3] opacity-75 transition-all duration-300"
+          title="Mirror Filter">
+          <div
+            class="overlay hidden absolute top-0 bottom-0 left-0 right-0 text-white  backdrop-blur-[1px] bg-[#97979724]  rounded-xl flex justify-center items-center">
+            Mirror</div>
+        </button>
+      </div>
+      <div
+        class="scroll-name-pointer flex gap-3 justify-center heading sticky z-10 bottom-0 translate-y-[8px] side-pointer bg-red-500  text-center text-white  rounded-b-xl  shadow-[9px_0px_8px_2px_#00000080]"
+        title="Scrollable Vertically">
+        <img class="opacity-85" src="./images/icons/up-scroll.svg" alt="Up Scroll for reference">
+        <img class="opacity-85" src="./images/icons/down-scroll.svg" alt="Down Scroll for reference">
+      </div>
+    </section>
+    <section class="canva-video flex-[0.9] flex flex-col gap-5 mx-4  justify-center">
+
+      <!------------------------------- Video-Webcam --------------------------->
+      <div class="video-webcam relative">
+
+        <canvas class="max-h-[47.6875rem] rounded-xl aspect-video w-full shadow-[-1px_0px_10px_0px_#000000b3]"></canvas>
+
+        <!-- Hidden Video -->
+        <video class="vid-player hidden" src="" aria-hidden="true"></video>
+
+        <!-- Overlay-Camera-Off -->
+        <div
+          class="cam-off-overlay absolute bg-[#131313] top-0 w-full h-full rounded-xl flex flex-col gap-4 justify-center items-center">
+          <svg class="fill-[#888889]" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 256 256">
+            <path
+              d="M213.92 210.62L158 149.12L53.92 34.62a8 8 0 1 0-11.84 10.76L58.82 63.8A80 80 0 0 0 120 183.6V200H32a8 8 0 0 0 0 16h165.19l4.89 5.38a8 8 0 1 0 11.84-10.76ZM80 104a48.19 48.19 0 0 1 2.24-14.44L96 104.71a32 32 0 0 0 28.23 31.06L138 150.94A48 48 0 0 1 80 104Zm56 96v-16.41a79.91 79.91 0 0 0 25.44-6.91l21.2 23.32ZM86.56 46.74a8 8 0 0 1 2-12.34a80 80 0 0 1 105 115.5a8 8 0 0 1-6.05 3.39h-.5a8 8 0 0 1-5.92-2.62L170 138.46a8 8 0 0 1-.92-9.54a48 48 0 0 0-61.95-68.14A8 8 0 0 1 97.67 59ZM128 72a32 32 0 0 1 32 32a35.18 35.18 0 0 1-.19 3.55a8 8 0 0 1-13.88 4.5l-24.24-26.67a8 8 0 0 1 5.8-13.38Z" />
+          </svg>
+          <p class="text-[#888889] text-xl">Your Web Cam is turned off</p>
+        </div>
+        <div
+          class="live-overlay absolute bg-transparent top-0 w-full h-full rounded-xl flex flex-col gap-4 justify-start items-end p-7 hidden">
+          <div class=" text-red-600 tracking-widest border border-red-600 p-1 font-semibold text-sm rounded-lg flex">
+            <div class="animate-pulse circle w-2 h-2 mr-1 my-auto bg-red-600 rounded-full"></div>LIVE
+          </div>
+        </div>
+
+        <!-- ---------------------- Onscreen Video Tool Tray --------------------- -->
+        <div
+          class="main-tool-tray absolute bottom-3 left-0 right-0 mx-auto flex justify-between items-center gap-3 px-2">
+          <button aria-pressed="false" class="invisible"></button>
+
+          <!-- Toggling tools/button s -->
+          <div class="toggle-tools bg-[#28282B] py-2 px-4 rounded-full flex justify-center items-center gap-4">
+            <button aria-pressed="false" class="cam-toggle hover:scale-110 transition-all duration-200">
+              <span class="sr-only">Web Cam Toggle</span>
+              <img src="./images/icons/webcam-off.svg" alt="Webcam Icon for off state" title="Camera Off(ctrl+m)" />
+              <img class="hidden" src="./images/icons/webcam-on.svg" alt="Webcam Icon for on state"
+                title="Camera On(ctrl+m)" />
+            </button>
+            <button aria-pressed="false" class="aud-toggle hover:scale-110 transition-all duration-200">
+              <span class="sr-only">Audio Toggle</span>
+              <img src="./images/icons/mic-on.svg" alt="Mic Icon for on state" title="Audio On(ctrl+m)">
+              <img class="hidden" src="./images/icons/mic-off.svg" alt="Mic Icon for off state"
+                title="Audio Off(ctrl+m)">
+
+            </button>
+            <button aria-pressed="false" class="screenshot aud-toggle hover:scale-110 transition-all duration-200"
+              title="Screenshot(ctrl+alt+s)">
+              <span class="sr-only">Take Screenshot</span>
+              <img src="./images/icons/ss-icon.svg" alt="Screenshot Icon for Taking Screenshots" />
+            </button>
+            <button aria-pressed="false"
+              class="sound-level flex gap-2 justify-center items-center  hover:scale-110 transition-all duration-200">
+              <span class="sr-only">Sound Level Increase / Decrease</span>
+              <img class="ss" src="./images/icons/sound-on.svg" alt="Sound Icon for range change sound level"
+                title="Click me for Sound Level">
+              <img class="hidden" src="./images/icons/sound-off.svg" alt="Sound Icon for zero sound level"
+                title="Sound Level Zero">
+              <input id="sound" class="hidden sound-range transition-all duration-500" type="range" aria-label="Slider"
+                aria-valuemax="100" aria-valuenow="0" min="0" max="10" name="soundRange" value="4">
+            </button>
+          </div>
+
+          <!-- ---------------------- Onscreen FullScreen Tool --------------------- -->
+          <button aria-pressed="false" class="full-screen py-2 px-4 hover:scale-110 transition-all duration-200">
+            <span class="sr-only">Fullscreen</span>
+            <img class="transition-all duration-300" src="./images/icons/open-fullscreen.svg"
+              alt="Fullscreen Icon for on state" title="Go Fullscreen">
+            <img class="hidden transition-all duration-1000" src="./images/icons/exit-fullscreen.svg"
+              alt="FullScreen Icon for off state" title="Exit Fullscreen">
+          </button>
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+    <!------------------------- Normal Filter Menu -------------------------->
+    <section class="filter-tray flex flex-col justify-between flex-[0.3] gap-3">
+      <h2 class="sr-only">Normal Filters Menu</h2>
+
+      <div
+        class="normal-filters flex justify-between flex-col my-auto flex-[0.5] shadow-[-1px_0px_15px_0px_#000000b3] p-4 py-3 transition-all duration-500 rounded-xl h-fit">
+        <div
+          class="name-pointer flex gap-1 heading z-10  w-fit bg-red-500  text-center text-white p-1 px-2 mb-3 rounded-lg shadow-[-1px_0px_7px_0px_#000000b3]">
+          <img src="./images/icons/filters.svg" alt="Filters Icon for filters menu">
+          Filters
+        </div>
+        <div class="blur-effect text-white flex  items-center">
+          <label class="flex flex-1" for="blur">Blur</label>
+          <input class="flex flex-1" id="blur" type="range" aria-label="Blur in pixels Slider" aria-valuemin="0"
+            aria-valuemax="20" aria-valuenow="0" min="0" max="20" value="0" name="blurRange">
+        </div>
+
+        <div class="grayscale-effect text-white flex  items-center">
+          <label class="flex flex-1" for="grayscale">Grayscale </label>
+          <input class="flex flex-1" id="grayscale" type="range" aria-label="Grayscale in percent Slider"
+            aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" min="0" max="100" value="0" name="grayscaleRange">
+        </div>
+        <div class="brightness-effect text-white flex  items-center">
+          <label class="flex flex-1" for="brightness">Brightness </label>
+          <input class="flex flex-1" id="brightness" type="range" aria-label="Brightness in percent Slider"
+            aria-valuemin="100" aria-valuemax="300" aria-valuenow="0" min="100" max="300" value="0"
+            name="brightnessRange">
+        </div>
+        <div class="contrast-effect text-white flex  items-center">
+          <label class="flex flex-1" for="contrast">Contrast </label>
+          <input class="flex flex-1" id="contrast" type="range" aria-label="Contrast in percent Slider"
+            aria-valuemin="0" aria-valuemax="200" aria-valuenow="100" min="0" max="200" value="100"
+            name="contrastRange">
+        </div>
+        <div class="saturate-effect text-white flex  items-center">
+          <label class="flex flex-1" for="saturate">Saturate </label>
+          <input class="flex flex-1" id="saturate" type="range" aria-label="Saturate in percent Slider"
+            aria-valuemin="0" aria-valuemax="200" aria-valuenow="100" min="0" max="200" value="100"
+            name="saturateRange">
+        </div>
+        <div class="sepia-effect text-white flex  items-center">
+          <label class="flex flex-1" for="sepia">Sepia </label>
+          <input class="flex flex-1" id="sepia" type="range" aria-label="Sepia in percent Slider" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0" min="0" max="100" value="0" name="sepiaRange">
+        </div>
+        <div class="invert-effect text-white flex  items-center">
+          <label class="flex flex-1" for="invert">Invert </label>
+          <input class="flex flex-1" id="invert" type="range" aria-label="Invert in percent Slider" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0" min="0" max="100" value="0" name="invertRange">
+        </div>
+
+      </div>
+
+      <div
+        class="screenshot-tray flex flex-col justify-between flex-[0.5] shadow-[-1px_0px_15px_0px_#000000b3] p-4 py-3 transition-all duration-500 rounded-xl h-fit">
+        <div
+          class="name-pointer flex gap-1 heading z-10  w-fit h-fit bg-red-500  text-center text-white p-1 px-2 mb-3 rounded-lg shadow-[-1px_0px_7px_0px_#000000b3]">
+          <img src="./images/icons/screenshot.svg" alt="Filters Icon for filters menu">
+          Screenshot
+        </div>
+        <div class="empty-tray flex flex-col text-[#a3a3a7] text-xl text-center">
+          <img class="w-fit mx-auto" src="./images/icons/no-screenshot.svg"
+            alt="No screenshot for empty screenshot tray">
+          <p>No screenshot</p>
+          <p class="text-xs">(Click on camera icon on the tool tray for screenshots or Ctrl+Alt+S)</p>
+        </div>
+        <div class="strip relative text-center">
+          <!-- <p class="absolute left-0 right-0 mx-auto text-white text-sm">Download</p> -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+</html>

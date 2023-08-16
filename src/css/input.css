@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+
+ /*------------------------------ Slider-------------------------------- */
+ input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%; /* To ensure the track covers the entire width */
+    height: 0.5rem;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    border-radius: 0.125rem;
+    transition: opacity 0.2s;
+  }
+  
+  /* WebKit (Safari, Chrome) Thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0.8rem;
+    height: 0.9rem;
+    border-radius: 0.1875rem;
+    background: rgb(247, 94, 94);
+    cursor: pointer;
+  }
+  
+  /* Firefox Thumb */
+  input[type="range"]::-moz-range-thumb {
+    width: 0.8rem;
+    height: 0.9rem;
+    border-radius: 0.1875rem;
+    background: rgb(239, 68, 68);
+    cursor: pointer;
+  }
+  
+  /* Hover State */
+  input[type="range"]:hover {
+    opacity: 1;
+  }
+  
+  
+   /* Hide scrollbar on main content area */
+   body {
+     scrollbar-width: none; /* Firefox */
+     -ms-overflow-style: none; /* Internet Explorer 10+ */
+   } 
+   ::-webkit-scrollbar {
+     display: none; /* Safari and Chrome */
+   }
