@@ -1,4 +1,4 @@
-# <img src="./images/icons/icon-camera.svg" width="25"/> CammerX Web App ( Version 1 )
+# <img src="../../images/icons/icon-camera.svg" width="25"/> CammerX Web App ( Version 1 )
 
 ### 🔗 Links
 
@@ -40,9 +40,9 @@
 
 ### Tested on Browsers( Latest Versions )
 
-- <img src="./images/icons/chrome.png" width="15" height="15"> &nbsp;Chrome ✔
-- <img src="./images/icons/firefox.png" width="15" height="15"> &nbsp;Firefox ✔
-- <img class="flex justify-center items-center" src="./images/icons/edge.png" width="25">&nbsp;Edge ✔
+- <img src="../../images/icons/chrome.png" width="15" height="15"> &nbsp;Chrome ✔
+- <img src="../../images/icons/firefox.png" width="15" height="15"> &nbsp;Firefox ✔
+- <img class="flex justify-center items-center" src="../../images/icons/edge.png" width="25">&nbsp;Edge ✔
 
 ### 💡 Challenges Faced
 
